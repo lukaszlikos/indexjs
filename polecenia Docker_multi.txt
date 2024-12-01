@@ -1,0 +1,15 @@
+
+#Budowanie obrazu
+docker build -f Dockerfile_multi --build-arg VERSION=v1.0 -t indexjs .
+
+#Uruchomienie kontenera
+docker run -d -p 8081:8080 --name test-indexjs indexjs
+
+#Logi kontenera
+docker logs test-indexjs
+
+#Warstwy kontenra
+docker history test-indexjs
+
+
+
