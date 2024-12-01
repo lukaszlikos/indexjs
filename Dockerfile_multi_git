@@ -10,7 +10,8 @@ RUN apk add --no-cache curl unzip && \
     unzip app.zip && \
     mv indexjs-main/src/* . && \
     rm -rf app.zip indexjs-main
-RUN npm install
+RUN --mount=type=cache,target=/root/.npm \
+	npm install
 
 # Etap 2: Runtime
 FROM node:18-alpine
