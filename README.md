@@ -1,1 +1,1 @@
-# To jest przykładower repozytorium z prostą aplikacją Node.js
+# To jest przykładowe repozytorium z prostą aplikacją Node.js
